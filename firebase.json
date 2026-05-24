@@ -1,0 +1,26 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "README.md",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.wasm",
+        "headers": [
+          { "key": "Content-Type", "value": "application/wasm" }
+        ]
+      },
+      {
+        "source": "**/*.pck",
+        "headers": [
+          { "key": "Content-Type", "value": "application/octet-stream" }
+        ]
+      }
+    ]
+  }
+}
